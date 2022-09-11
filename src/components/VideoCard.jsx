@@ -38,7 +38,7 @@ const VideoCard = ({
       <CardContent
         sx={{
           backgroundColor: "#1e1e1e",
-          heright: "106px",
+          height: "106px",
         }}
       >
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
@@ -54,7 +54,7 @@ const VideoCard = ({
           }
         >
           <Typography variant="subtitle2" fontWeight="bold" color="gray">
-            {snippet?.demoChannelTitle || demoChannelTitle}
+            {snippet?.channelTitle || demoChannelTitle}
             <CheckCircle
               sx={{
                 fontSize: 12,
